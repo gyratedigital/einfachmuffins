@@ -1,0 +1,129 @@
+/* Card Container */
+.card {
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 2% 10%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03); /* Slight hover effect */
+}
+
+/* Left Side: Chef Image */
+.card-image {
+  flex: 1; /* Takes up 1 part of the available space */
+  max-width: 200px; /* Fixed width for the image container */
+  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  overflow: hidden; /* Ensures the image doesn't overflow */
+
+}
+
+.card-image img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+border-radius: 20px;
+  clip-path: polygon(-2.69% -0.13%, 16.66% 0.5%, 41.04% 1.75%, 61.03% 0.5%, 101.29% -2.7%, 97.15% 32.57%, 104.53% 99.22%, 74.03% 98.6%, 55.26% 100.05%, 28.45% 100.1%, -0.31% 101.06%, 1.31% 65.55%);
+}
+/* Right Side: Content */
+.card-content {
+  flex: 2; /* Takes up 2 parts of the available space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Chef Name */
+.chef-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Rating Stars */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Additional Details */
+.details {
+  display: flex;
+  flex-wrap: wrap; /* Allows details to wrap on smaller screens */
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.detail-item svg {
+  color: #d14b62;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background: #d14b62;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto; /* Pushes button to bottom */
+  transition: background 0.3s ease;
+  width: 20%;
+}
+
+.cta-button:hover {
+  background: #b63d54;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+    max-width: none; /* Reset max-width for mobile */
+    height: 200px; /* Fixed height for mobile */
+    border-radius: 12px 12px 0 0;
+
+  }
+  .card-content {
+    text-align: center;
+  }
+  .details {
+    justify-content: center;
+  }
+  .cta-button {
+    width: 100%; /* Full width button on mobile */
+  }
+}

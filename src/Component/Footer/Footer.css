@@ -1,0 +1,38 @@
+/* Footer.css */
+.footer {
+    background-color: #0a1f3a; /* Dark blue background */
+    color: white; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Font family */
+    width: 100%; /* Full width */
+    clip-path: polygon(0.08% 7.24%, 15.39% 0.5%, 31.39% 13.44%, 61.91% -4.69%, 83.78% 10.6%, 100% 2%, 100% 96.35%, 79.85% 97.6%, 60.22% 97.65%, 40.07% 98.9%, 17.78% 99.74%, 0.07% 97.60%);;
+      }
+  
+  .footer-content {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Padding for left and right */
+  }
+  
+  .copyright {
+    font-size: 14px; /* Font size for copyright text */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .additional-text {
+    font-size: 12px; /* Font size for additional text */
+    margin: 5px 0 0; /* Margin for spacing */
+    opacity: 0.8; /* Slightly transparent */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .copyright {
+      font-size: 12px; /* Smaller font size on smaller screens */
+    }
+  
+    .additional-text {
+      font-size: 10px; /* Smaller font size on smaller screens */
+    }
+  }

@@ -1,0 +1,91 @@
+/* Container for content and image */
+.container {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    gap: 40px; /* Space between content and image */
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 4% 10%; /* Center the container */
+  }
+  
+  /* Left Side: Content */
+  .content {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between content items */
+  }
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .content h3 {
+    font-size: 24px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  
+  .content button {
+    background: #d14b62; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Align button to the left */
+    transition: background 0.3s ease;
+    margin-top: 2%;
+  }
+  
+  .content button:hover {
+    background: #b63d54; /* Darker red on hover */
+  }
+  
+  /* Right Side: Image */
+  .image-container3 {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: flex-start; /* Align image to the right */
+
+  }
+  
+  .image-container3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners for the image */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    clip-path: polygon(-0.19% -0.75%, 16.66% 0.5%, 43.24% 2.95%, 66.23% 0.5%, 99.09% 0%, 96.75% 30.52%, 99.93% 100.96%, 74.03% 98.6%, 55.26% 100.05%, 24.45% 101%, -0.31% 101.06%, 3.21% 65.87%);
+
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack content and image vertically on smaller screens */
+      text-align: center; /* Center align text */
+    }
+  
+    .content button {
+      align-self: center; /* Center align button */
+    }
+  
+    .image-container3 {
+      justify-content: center; /* Center align image */
+    }
+  }
