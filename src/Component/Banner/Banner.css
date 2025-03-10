@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     background: url('/public/bannerimage.png') no-repeat center center/cover;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,10 +10,7 @@
     overflow: hidden;
   
     /* Clip-path for top and bottom wavy effect */
-   
-
     clip-path: polygon(0% 0.75%, 16.66% 0.5%, 41.04% 1.75%, 61.03% 0.5%, 81.7% 1.5%, 100% 2%, 100% 93.75%, 80% 95%, 60.07% 93.75%, 40% 95%, 17.78% 93.25%, 0% 95%);
-
   }
   
  /* Small Welcome Banner */

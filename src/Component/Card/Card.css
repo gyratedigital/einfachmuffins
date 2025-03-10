@@ -3,9 +3,10 @@
   display: flex;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
   overflow: hidden;
-  margin: 2% 10%;
+  max-width: 900px;
+  margin: 0 auto;
   transition: transform 0.3s ease;
 }
 
@@ -29,7 +30,7 @@
   width: 100%; /* Make the image fill the container */
   height: 100%; /* Make the image fill the container */
   object-fit: cover; /* Ensures the image covers the container without distortion */
-border-radius: 20px;
+  border-radius: 20px;
   clip-path: polygon(-2.69% -0.13%, 16.66% 0.5%, 41.04% 1.75%, 61.03% 0.5%, 101.29% -2.7%, 97.15% 32.57%, 104.53% 99.22%, 74.03% 98.6%, 55.26% 100.05%, 28.45% 100.1%, -0.31% 101.06%, 1.31% 65.55%);
 }
 /* Right Side: Content */
@@ -56,13 +57,16 @@ border-radius: 20px;
   margin-bottom: 12px;
 }
 
+.card.rating{
+  margin-bottom: 10px !important;
+}
+
 /* Rating Stars */
 .rating {
   display: flex;
   align-items: center;
   gap: 5px;
   font-size: 14px;
-  margin-bottom: 10px;
 }
 
 /* Additional Details */

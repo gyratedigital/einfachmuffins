@@ -29,7 +29,7 @@ const Card = ({ chef }) => {
           </div>
           <div className="detail-item">
             <FaClock />
-            <span>{chef.experience} years experience</span>
+            <span>{chef.cookTime} min</span>
           </div>
           <div className="detail-item">
             <FaHeart />

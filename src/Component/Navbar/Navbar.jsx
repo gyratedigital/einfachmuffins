@@ -11,14 +11,14 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="bg-white p-[10px_20px] relative flex justify-between items-center">
       {/* Mobile Menu Icon */}
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
       {/* Navigation Links */}
-      <ul className={`nav-container ${isMobileMenuOpen ? "active" : ""}`}>
+      <ul className={`nav-container flex justify-evenly items-center list-none p-0 mx-auto w-[100%] ${isMobileMenuOpen ? "active" : ""}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/list">Items</Link></li>

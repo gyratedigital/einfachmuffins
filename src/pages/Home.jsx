@@ -5,7 +5,7 @@ import Banner2 from "../Component/Banner2/Banner2";
 
 import Slider from "../Component/Slider/Slider";
 import Card from "../Component/Card/Card";
-import chefimg from "../chief-cook-woman-13192968.jpg"
+import chefimg from "../Zitronentorte_62.jpg"
 import LeftText from "../Component/LeftText/LeftText";
 import RightText from "../Component/RightText/RightText";
 import Banner3 from "../Component/Banner3/Banner3";
@@ -15,13 +15,13 @@ import Footer from "../Component/Footer/Footer";
 
 const Home = (props) => {
     const chef = {
-         image: chefimg,
-        name: "Chef John Doe",
+        image: chefimg,
+        name: "Leckerer Bauerneintopf (Bauerntopf)",
         rating: 4.5, // Rating out of 5
         reviews: 120, // Number of reviews
-        description: "Award-winning chef specializing in Italian cuisine with over 10 years of experience.Award-winning chef specializing in Italian cuisine with over 10 years of experience.Award-winning chef specializing in Italian cuisine with over 10 years of experience.Award-winning chef specializing in Italian cuisine with over 10 years of experience.Award-winning chef specializing in Italian cuisine with over 10 years of experience.",
+        description: "Heute haben wir den leckeren Bauerntopf mit Hackfleisch (für einige ist es auch ein Bauerneintopf) für dich. Der einfach nach gutem Essen duftet und auch genauso schmeckt. Das einfache Rezept bringt saftiges Hackfleisch mit knackigem…",
         cuisine: "Italian",
-        experience: 10,
+        cookTime: 50,
         likes: 350,
       };
     const images = [

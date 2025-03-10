@@ -1,11 +1,4 @@
 /* Container for content and image */
-.container {
-    display: flex;
-    align-items: center; /* Vertically center align items */
-    gap: 40px; /* Space between content and image */
-    max-width: 1200px; /* Limit the width of the container */
-    margin: 4% 10%; /* Center the container */
-  }
   
   /* Left Side: Content */
   .content {

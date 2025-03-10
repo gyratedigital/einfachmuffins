@@ -1,22 +1,4 @@
 /* Navbar.css */
-.navbar {
-  background-color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  width: 88%;
-}
 
 .nav-container li {
   flex: 1;
