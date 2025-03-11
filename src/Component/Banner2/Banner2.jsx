@@ -54,16 +54,16 @@ const Banner2 = () => {
     };
 
     return (
-        <div className="banner2">
-            <div className="food-icons">
+        <div className="banner2 bg-[rgba(238,97,97,0.7)] flex flex-col items-center p-[50px] text-center text-white relative overflow-visible">
+            <div className="food-icons absolute top-[-25px] left-[74%] flex z-10">
                 <GiSandwich className="food-icon" />
             </div>
-            <h1 className="heading">Our Delicious Recipes</h1>
+            <h1 className="heading text-[36px] mb-[20px] relative z-[2]">Our Delicious Recipes</h1>
 
-            <div className="image-container">
+            <div className="image-container flex flex-wrap gap-[10px] justify-center mb-[2%]">
                 {recipes.map((recipe, index) => (
-                    <div key={index} className="image-item">
-                        <img src={recipe.image} alt={recipe.title} />
+                    <div key={index} className="image-item flex flex-col items-center relative w-[200px]">
+                         <img className="w-[200px] h-[200px] object-cover rounded-[10px] shadow-md" src={recipe.image} alt={recipe.title} />
                         <button className="tag-button">Simple</button> {/* Tag button */}
                         <button
                             className="favorite-button"
@@ -82,10 +82,10 @@ const Banner2 = () => {
                     </div>
                 ))}
             </div>
-            <div className="image-container">
+            <div className="image-container flex flex-wrap gap-[10px] justify-center mb-[2%]">
                 {recipes.map((recipe, index) => (
-                    <div key={index} className="image-item">
-                        <img src={recipe.image} alt={recipe.title} />
+                    <div key={index} className="image-item flex flex-col items-center relative w-[200px]">
+                        <img className="w-[200px] h-[200px] object-cover rounded-[10px] shadow-md" src={recipe.image} alt={recipe.title} />
 
                         {/* Tag button */}
                         <button className="tag-button">Simple</button>
@@ -113,8 +113,8 @@ const Banner2 = () => {
                 <button>Explore More</button>
             </div>
 
-            <div className="food-icons-bottom">
-                <GiChickenOven className="food-icon" />
+            <div className="food-icons-bottom absolute bottom-[-25px] left-[20%] flex z-[1]">
+                <GiChickenOven className="food-icon text-[80px] text-black" />
             </div>
         </div>
     );

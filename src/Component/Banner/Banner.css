@@ -1,141 +1,42 @@
-.banner {
-    position: relative;
+ .gy_banner {
+   
     background: url('/public/bannerimage.png') no-repeat center center/cover;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    overflow: hidden;
   
     /* Clip-path for top and bottom wavy effect */
-    clip-path: polygon(0% 0.75%, 16.66% 0.5%, 41.04% 1.75%, 61.03% 0.5%, 81.7% 1.5%, 100% 2%, 100% 93.75%, 80% 95%, 60.07% 93.75%, 40% 95%, 17.78% 93.25%, 0% 95%);
-  }
+     clip-path: polygon(0% 0.75%, 16.66% 0.5%, 41.04% 1.75%, 61.03% 0.5%, 81.7% 1.5%, 100% 2%, 100% 93.75%, 80% 95%, 60.07% 93.75%, 40% 95%, 17.78% 93.25%, 0% 95%);
+  } 
   
  /* Small Welcome Banner */
 /* Small Welcome Banner */
 .small-banner {
-    position: absolute;
-    top: 26%; /* Adjusted to use percentage for responsiveness */
-    left: 50%;
-    transform: translateX(-50%);
-    background: #d14b62; /* Soft red from reference */
-    color: white;
-    padding: 6px 15px;
-    font-size: 14px;
     clip-path:polygon(10% 16.13%, 45.42% 14.51%, 85.81% 11.76%, 97.97% 15.75%, 97.14% 85.12%, 3.47% 92.63%, 1.95% 47.97%, 4.04% 23.97%);
-    font-weight: bold;
-    border-radius: 20px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Ensure it's above other elements */
   }
   
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .small-banner {
-      top: 22%; /* Adjust for smaller screens */
-      font-size: 12px; /* Smaller font size for mobile */
-      padding: 4px 12px; /* Smaller padding for mobile */
-    }
-  }
   
-  @media (max-width: 480px) {
-    .small-banner {
-      top: 19%; /* Further adjustment for very small screens */
-      font-size: 11px; /* Even smaller font size */
-      padding: 3px 10px; /* Even smaller padding */
-    }
-  }
   
+   
   /* Center the overlay */
   .overlay {
-  
-    background: #dff0db; /* Light pastel green */
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 400px;
-    flex-direction: column;
     clip-path:polygon(-0.63% 0%, 27.5% 4.02%, 100.48% -1.14%, 99% 39.21%, 100.38% 100.43%, 67.11% 96.25%, -0.07% 103.36%, 1.13% 67.27%);
   }
   
-  /* Styled Heading */
-  .overlay h2 {
-    font-size: 25px;
-    font-weight: bold;
-    color: #3b514a; /* Darker green from reference */
-    margin: 0;
-  }
   
   /* Search Form */
-  .subscribe-form {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    overflow: hidden;
-    background: white;
-    padding: 0px 60px;
-    clip-path:polygon(21.5% -1.96%, 67.26% 1.48%, 98.73% 7.66%, 97.29% 83.05%, 52.18% 95.71%, 1.29% 99.11%, 1.8% 53.81%, 1.96% 5.16%);
-  }
-  /* Search Icon */
-  .subscribe-form .icon {
-    padding: 8px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .search-form {
+      clip-path:polygon(21.5% -1.96%, 67.26% 1.48%, 98.73% 7.66%, 97.29% 83.05%, 52.18% 95.71%, 1.29% 99.11%, 1.8% 53.81%, 1.96% 5.16%);
   }
   
-  .subscribe-form input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    font-size: 16px;
-    outline: none;
-    background: transparent;
-    clip-path: polygon(
+
+  
+  .search-form input {
+      clip-path: polygon(
         10% 0%, 90% 0%, /* Smooth top-left and top-right corners */
         97.35% 4.75%, 98.39% 46.75%, 96.84% 99.63%, 
         2.11% 94.23%, 2.63% 53.81%, 1.96% 5.16%
       );
   }
   
-  /* Subscribe Button */
-  .subscribe-form button {
-    background: #d14b62; /* Red button */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-  }
   
-  .subscribe-form button:hover {
-    background: #b63d54;
-  }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .overlay {
-      width: 90%;
-    }
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .subscribe-form {
-      flex-direction: column;
-    }
-  
-    .subscribe-form input,
-    .subscribe-form button {
-      width: 100%;
-    }
-  }
+ 
   
