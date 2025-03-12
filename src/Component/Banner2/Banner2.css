@@ -9,64 +9,19 @@
 
 
 
-.tag-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.favorite-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
-/* Text Below Image */
-.image-text {
-    margin-top: 8px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
+
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .heading {
-        font-size: 28px;
-    }
 
-    .food-icon {
-        font-size: 40px; /* Smaller icons on smaller screens */
-    }
+  
 
-    .image-item img {
-        width: 160px;
-        height: 160px;
-    }
-
-    .image-text {
-        font-size: 14px;
-    }
-}
 
 @media (max-width: 480px) {
-    .heading {
-        font-size: 24px;
-    }
-
-    .food-icon {
+   
+     .food-icon {
         font-size: 30px; /* Even smaller icons on mobile */
-    }
+    } 
 
     .image-item img {
         width: 140px;
@@ -77,37 +32,11 @@
         font-size: 12px;
     }
 }
-.explore-btn button{
-    padding: 10px 25px;
-    border: none;
-    background: white;
-    border-radius: 20px;
-    color: black;
-}
-/* Rating & Time Styling */
-.recipe-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    color: white;
-    margin-top: 8px;
-    font-weight: bold;
-    gap: 10px;
-}
 
-.clock-icon {
-    color: white;
-    font-size: 16px;
-}
 
-.stars {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-}
+
 
 .star-icon {
-    color: gold;
-    font-size: 16px;
+     color: gold; 
+   
 }

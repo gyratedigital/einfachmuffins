@@ -46,78 +46,75 @@ const Banner2 = () => {
         return (
             <>
                 {[...Array(fullStars)].map((_, i) => (
-                    <FaStar key={i} className="star-icon" />
+                    <FaStar key={i} className="star-icon text-gold " />
                 ))}
-                {halfStar && <FaStarHalfAlt className="star-icon" />}
+                {halfStar && <FaStarHalfAlt className="star-icon " />}
             </>
         );
     };
 
     return (
         <div className="banner2 bg-[rgba(238,97,97,0.7)] flex flex-col items-center p-[50px] text-center text-white relative overflow-visible">
-            <div className="food-icons absolute top-[-25px] left-[74%] flex z-10">
+            <div className="food-icons absolute top-[-25px] left-[74%] flex z-10 text-[30px] md:text-[40px] sm:text-[30px]">
                 <GiSandwich className="food-icon" />
             </div>
-            <h1 className="heading text-[36px] mb-[20px] relative z-[2]">Our Delicious Recipes</h1>
+            <h1 className="heading sm:text-[24px] text-[36px] mb-[20px] relative z-[2]  md:text-[28px]">Our Delicious Recipes</h1>
 
             <div className="image-container flex flex-wrap gap-[10px] justify-center mb-[2%]">
                 {recipes.map((recipe, index) => (
                     <div key={index} className="image-item flex flex-col items-center relative w-[200px]">
                          <img className="w-[200px] h-[200px] object-cover rounded-[10px] shadow-md" src={recipe.image} alt={recipe.title} />
-                        <button className="tag-button">Simple</button> {/* Tag button */}
+                        <button className="tag-button absolute top-[10px] left-[10px] bg-[#ff6f61] text-white border-none px-[10px] py-[5px] rounded-[10px] text-[12px] font-bold cursor-pointer">Simple</button> {/* Tag button */}
                         <button
-                            className="favorite-button"
-                            onClick={() => toggleFavorite(index)}
+                            className=" favorite-button absolute top-[10px] right-[10px] bg-none border-none cursor-pointer "
+                            onClick={()=> toggleFavorite(index)}
                         >
                             {favorites[index] ? <FaHeart /> : <FaRegHeart />} {/* Dynamic heart icon */}
                         </button>
-                        <div className="image-text">{recipe.title}</div>
-                        <div className="recipe-info">
-                            <span style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
+                        <div className="image-text mt-[8px] text-white text-[16px] font-bold">{recipe.title}</div>
+                        <div className="recipe-info flex items-center justify-between text-[14px] text-white mt-[8px] font-bold gap-[10px]">
+                        <span className="flex items-center gap-[5px]">
 
                                 <FaClock className="clock-icon" /> {recipe.time}
                             </span>
-                            <div className="stars">{renderStars(recipe.rating)}</div>
+                            <div className="stars flex items-center gap-[3px]">{renderStars(recipe.rating)}</div>
                         </div>
                     </div>
                 ))}
             </div>
+
             <div className="image-container flex flex-wrap gap-[10px] justify-center mb-[2%]">
                 {recipes.map((recipe, index) => (
                     <div key={index} className="image-item flex flex-col items-center relative w-[200px]">
-                        <img className="w-[200px] h-[200px] object-cover rounded-[10px] shadow-md" src={recipe.image} alt={recipe.title} />
-
-                        {/* Tag button */}
-                        <button className="tag-button">Simple</button>
-
-                        {/* Favorite button (Heart Icon) */}
+                         <img className="w-[200px] h-[200px] object-cover rounded-[10px] shadow-md" src={recipe.image} alt={recipe.title} />
+                        <button className="tag-button absolute top-[10px] left-[10px] bg-[#ff6f61] text-white border-none px-[10px] py-[5px] rounded-[10px] text-[12px] font-bold cursor-pointer">Simple</button> {/* Tag button */}
                         <button
-                            className="favorite-button"
-                            onClick={() => toggleFavorite(index)}
+                            className=" favorite-button absolute top-[10px] right-[10px] bg-none border-none cursor-pointer "
+                            onClick={()=> toggleFavorite(index)}
                         >
-                            {favorites[index] ? <FaHeart className="heart-icon filled" /> : <FaRegHeart className="heart-icon" />}
+                            {favorites[index] ? <FaHeart /> : <FaRegHeart />} {/* Dynamic heart icon */}
                         </button>
+                        <div className="image-text md:text-[14px] mt-[8px] text-white text-[16px] font-bold">{recipe.title}</div>
+                        <div className="recipe-info flex items-center justify-between text-[14px] text-white mt-[8px] font-bold gap-[10px]">
+                        <span className="flex items-center gap-[5px]">
 
-                        <div className="image-text">{recipe.title}</div>
-
-                        <div className="recipe-info">
-                            <span className="time-info">
                                 <FaClock className="clock-icon" /> {recipe.time}
                             </span>
-                            <div className="stars">{renderStars(recipe.rating)}</div>
+                            <div className="stars flex items-center gap-[3px]">{renderStars(recipe.rating)}</div>
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className="explore-btn">
-                <button>Explore More</button>
-            </div>
+             </div>
+            
+             <div className="explore-btn px-[25px] py-[10px] border-none bg-white rounded-[20px] text-black">
+                 <button>Explore More</button>
+             </div>
 
-            <div className="food-icons-bottom absolute bottom-[-25px] left-[20%] flex z-[1]">
+             <div className="food-icons-bottom absolute bottom-[-25px] left-[20%] flex z-[1] text-[30px] ">
                 <GiChickenOven className="food-icon text-[80px] text-black" />
-            </div>
-        </div>
-    );
-};
+             </div>
+             </div>
+     );
+ };
 
 export default Banner2;
