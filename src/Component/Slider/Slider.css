@@ -1,7 +1,7 @@
 /* Container for the whole slider */
   
   /* Individual slider item */
-  .slider-item {
+  /* .slider-item {
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -9,10 +9,10 @@
     background: #fff;
     position: relative;
     padding-bottom: 10px;
-  }
+  } */
   
   /* Tag button */
-  .tag-button {
+  /* .tag-button {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -23,10 +23,10 @@
     border-radius: 5px;
     font-size: 12px;
     cursor: pointer;
-  }
+  } */
   
   /* Favorite button */
-  .favorite-button {
+  /* .favorite-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -36,20 +36,20 @@
     cursor: pointer;
     z-index: 9;
   }
-  
+   */
   /* Image container */
-  .image-container{
+  /* .image-container{
     width: 100%;
-  }
+  } */
   
-  .item-image {
+  /* .item-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
   
   /* Rating and Timer row */
-  .rating-timer {
+  /* .rating-timer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,27 +57,27 @@
     font-size: 14px;
     color: #666;
     font-weight: bold;
-  }
+  } */
   
-  .timer,
+  /* .timer,
   .rating {
     display: flex;
     align-items: center;
     gap: 5px;
-  }
+  } */
   
   /* Item title */
-  .item-title {
+  /* .item-title {
     text-align: center;
     font-size: 18px;
     color: #333;
     margin: 5px 0;
-  }
+  } */
   
   /* Item description */
-  .item-description {
+  /* .item-description {
     text-align: center;
     font-size: 14px;
     color: #666;
     padding: 0 10px;
-  }  
+  }   */

@@ -1,60 +1,16 @@
-/* SocialMedia.css */
-.social-media-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Space between company logo and social media logos */
-    padding: 20px;
-    border-radius: 12px;
-  }
-  
-  /* Company Logo */
-  .company-logo img {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-  }
-  
-  /* Social Media Logos */
-  .social-media-logos {
-    display: flex;
-    gap: 15px; /* Space between social media icons */
-  }
-  
-  .social-media-logos a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Size of the circle */
-    height: 40px;
-    background-color: #070e33e8;; 
-    border-radius: 50%; /* Makes it a circle */
-    text-decoration: none;
-    
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-media-logos a:hover {
-    background-color: #ff6f61; /* Change circle color on hover */
-    transform: scale(1.1); /* Slight hover effect */
-  }
-  
-  .social-icon {
-    color: white; /* Dark blue icon color */
-    font-size: 20px; /* Icon size */
-  }
-  
+
   /* Responsive Design */
   @media (max-width: 768px) {
-    .company-logo img {
-      width: 120px; /* Smaller logo on smaller screens */
-    }
-  
+    /* .company-logo img {
+      width: 120px; 
+    } */
+/*   
     .social-media-logos a {
-      width: 35px; /* Smaller circles on smaller screens */
+      width: 35px; 
       height: 35px;
-    }
+    } */
   
-    .social-icon {
-      font-size: 18px; /* Smaller icons on smaller screens */
-    }
+    /* .social-icon {
+      font-size: 18px; 
+    } */
   }

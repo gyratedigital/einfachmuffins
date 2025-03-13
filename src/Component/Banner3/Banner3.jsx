@@ -53,18 +53,19 @@ const Banner3 = () => {
     };
 
     return (
-        <div className="banner3">
-            <div className="kicthen-icons">
+        <div className="banner3 bg-[rgba(51,149,57,0.4)] flex flex-col items-center py-[50px] text-center text-black relative overflow-visible 
+clip-path-[polygon(0%_0.75%,16.66%_0.5%,41.04%_1.75%,61.03%_0.5%,81.7%_1.5%,100%_2%,99.93%_99.28%,80.37%_99.65%,60.07%_97.95%,40.15%_100.09%,17.56%_98.12%,0.01%_100.54%)]">
+            <div className="kicthen-icons absolute bottom-[7%] left-[90%] flex z-10">
                 {/* <GiChickenOven className="food-icon" /> */}
-                <GiForkKnifeSpoon className="spoon-icon" />
+                <GiForkKnifeSpoon className="spoon-icon text-[75px] text-black transition-all duration-300 ease-in-out rotate-[7deg] hover:rotate-[30deg] hover:scale-[1.1]" />
 
             </div>
-            <h1 className="heading">Our Delicious Recipes</h1>
+            <h1 className="heading text-[36px] m-0  sm:text-[24px] md:text-[28px]">Our Delicious Recipes</h1>
 
-            <div className="banner3-image-container">
+            <div className="banner3-image-container flex flex-wrap gap-[10px] justify-center py-[2%] mx-[10%]">
                 {recipes.map((recipe, index) => (
-                    <div key={index} className="banner3-image-item">
-                        <img src={recipe.image} alt={recipe.title} />
+                    <div key={index} className="banner3-image-item relative">
+                        <img className="object-cover rounded-[10px] shadow-md h-[150px] w-full" src={recipe.image} alt={recipe.title} />
                         <button className="tag-button">Simple</button> {/* Tag button */}
                         <button
                             className="favorite-button"
@@ -72,23 +73,21 @@ const Banner3 = () => {
                         >
                             {favorites[index] ? <FaHeart /> : <FaRegHeart />} {/* Dynamic heart icon */}
                         </button>
-                        <div className="banner3-image-text">Recipe {index + 1}</div> {/* Placed outside image but inside image-item */}
-                        <div className="recipe-info">
-                                                   <span style={{ display: 'flex', gap: '5px', alignItems: 'center' }}>
-                       
-                                                       <FaClock className="clock-icon" /> {recipe.time}
-                                                   </span>
-                                                   <div className="stars">{renderStars(recipe.rating)}</div>
-                                               </div>
+                        <div className="image-text mt-[8px] text-white text-[16px] font-bold">{recipe.title}</div>
+                        <div className="recipe-info flex items-center justify-between text-[14px] text-white mt-[8px] font-bold gap-[10px]">
+                            <span className="flex items-center gap-[5px]">
+                                <FaClock className="clock-icon" /> {recipe.time}
+                            </span>
+                            <div className="stars flex items-center gap-[3px]">{renderStars(recipe.rating)}</div>
+                        </div>
                         <div style={{marginTop:'5%'}}>This is demo text of recipe {index + 1}</div> {/* Placed outside image but inside image-item */}
 
                     </div>
                 ))}
             </div>
-            <div className="kicthen-icons-bottom ">
+            <div className="kicthen-icons-bottom absolute left-[2%] top-[20%] flex z-[1]">
                 {/* <GiChickenOven className="food-icon" /> */}
-                <GiKnifeFork className="spoon-icon" />
-
+                <GiKnifeFork className="spoon-icon text-[75px] text-black transition-all duration-300 ease-in-out rotate-[7deg] hover:rotate-[30deg] hover:scale-[1.1]" />
             </div>
         </div>
     );
