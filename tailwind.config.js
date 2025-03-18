@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       fontFamily:{
         raleway: ['Raleway', 'sans-serif'],
+      },
+      colors:{
+          customPurple: 'rgb(115, 64, 96)',
+          customtextcolor :'rgb(77 ,77, 77)',
+          nextbackbtn:'rgb(237, 182, 84)'
       }
     },
   },
