@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GiChickenOven, GiSandwich } from "react-icons/gi"; // Food icons from react-icons
 import { FaClock, FaHeart, FaRegHeart, FaStar, FaStarHalfAlt } from "react-icons/fa"; // Rating & Time icons
 import "./Banner2.css";
+import { Link } from "react-router-dom";
 
 const Banner2 = () => {
      const [favorites, setFavorites] = useState({}); // State to track favorite status
@@ -105,11 +106,11 @@ const Banner2 = () => {
                         </div>
                     ))}
                 </div>
-                
+                <Link to="/list">
                 <div className="explore-btn px-[25px] w-[170px] text-center mx-auto py-[10px] my-[2%] border-none bg-white rounded-[20px] text-black">
                     <button>Explore More</button>
                 </div>
-
+                </Link>
                 <div className="food-icons-bottom absolute bottom-[-25px] left-[20%] flex z-[1] text-[30px] ">
                     <GiChickenOven className="food-icon text-[80px] text-black" />
                 </div>

@@ -17,7 +17,7 @@ const Slider = ({ items }) => {
   };
 
   return (
-    <div className="container mx-auto py-[4%]">
+    <div className="container mx-auto p-[2%]">
       <Swiper
         slidesPerView={4}
         loop={true}

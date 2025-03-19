@@ -1,5 +1,6 @@
 import React from "react";
 import "./RightText.css";
+import { Link } from "react-router-dom";
 
 const RightText = ({ heading, description, paragraph, buttonText, imageUrl }) => {
   return (
@@ -13,9 +14,11 @@ const RightText = ({ heading, description, paragraph, buttonText, imageUrl }) =>
       <h2 className="text-3xl font-bold mb-4">{heading}</h2>
       <h3 className="text-xl text-gray-600 mb-2">{description}</h3>
       <p className="text-gray-700 mb-6">{paragraph}</p>
+      <Link to='/list'>
       <button className="bg-[#d14b62] text-white px-6 py-2 rounded-lg shadow hover:bg-[#b94055] transition-allbg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-700 transition-all">
         {buttonText}
       </button>
+      </Link>
     </div>
     
   </div>

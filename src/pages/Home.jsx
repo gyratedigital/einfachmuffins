@@ -145,13 +145,7 @@ const Home = (props) => {
       buttonText="Explore Recipes"
       imageUrl="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     />
-         <LeftText
-      heading="Delicious Recipes"
-      description="Discover the Best Dishes"
-      paragraph="Explore a wide variety of recipes from around the world. Whether you're a beginner or a seasoned chef, we have something for everyone.Explore a wide variety of recipes from around the world. Whether you're a beginner or a seasoned chef, we have something for everyone.Explore a wide variety of recipes from around the world. Whether you're a beginner or a seasoned chef, we have something for everyone.Explore a wide variety of recipes from around the world. Whether you're a beginner or a seasoned chef, we have something for everyone."
-      buttonText="Explore Recipes"
-      imageUrl="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-    />
+  
     <Banner3/>
     <Slider2 items={items} />
     <SocialMedia/>

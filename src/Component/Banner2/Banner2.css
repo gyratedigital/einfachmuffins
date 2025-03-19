@@ -18,7 +18,9 @@
 
 
 @media (max-width: 480px) {
-   
+   .container{
+    padding:  4%;
+   }
      .food-icon {
         font-size: 30px; /* Even smaller icons on mobile */
     } 
