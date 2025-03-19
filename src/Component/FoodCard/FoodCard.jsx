@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { FaClock, FaHeart, FaRegHeart, FaStar } from "react-icons/fa";
 import "./FoodCard.css";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
 
 const FoodCard = ({ data }) => {
   const [favorites, setFavorites] = useState({});
@@ -108,12 +111,16 @@ const FoodCard = ({ data }) => {
       {/* 🍰 Food Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
         {filteredData.map((item, index) => (
+<<<<<<< HEAD
           
           <div
           key={index}
           className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
         >
           <Link to="/details">
+=======
+          <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
             <div className="relative">
               <img src={item.image} alt={item.recipeTitle} className="w-full h-48 object-cover" />
               <button

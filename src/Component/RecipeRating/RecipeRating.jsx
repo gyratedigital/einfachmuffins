@@ -58,7 +58,12 @@ const RecipeRating = () => {
   return (
     <div className="max-w-6xl mx-auto p-6 mt-8">
       {/* Grid Layout for Left and Right Sections */}
+<<<<<<< HEAD
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">        {/* Left Side - Recipe Info */}
+=======
+      <div className="grid md:grid-cols-3 gap-8">
+        {/* Left Side - Recipe Info */}
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
         <div className="md:col-span-2">
           <div className="bg-customPurple text-white p-6 relative">
             {/* Recipe Image */}
@@ -118,7 +123,11 @@ const RecipeRating = () => {
                 <div>
                   <h3 className="text-lg font-bold text-gray-400 uppercase">Ingredients</h3>
                 </div>
+<<<<<<< HEAD
                 <div className="flex flex-wrap justify-between items-center gap-5">
+=======
+                <div className="flex justify-between items-center gap-5">
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
                   <div className="flex justify-between items-center gap-1">
                     <span>UNITS</span>
                     <button className="px-2 py-1 border rounded bg-black text-white">US</button>

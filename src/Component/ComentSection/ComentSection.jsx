@@ -1,5 +1,8 @@
 import React, { useState } from "react"
+<<<<<<< HEAD
 import { FaInstagram, FaPinterest, FaFacebook, FaTwitter } from "react-icons/fa";
+=======
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
 
 const CommentSection = (props) => {
 
@@ -150,6 +153,7 @@ const CommentSection = (props) => {
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div className="block sm:hidden flex flex-col space-y-5 mt-10">                        {/* Author Card */}
                         <div className="bg-gray-100 p-6 pt-16 text-center relative">
                           {/* Image Container */}
@@ -203,6 +207,9 @@ const CommentSection = (props) => {
                       </div>
             </div>
             
+=======
+            </div>
+>>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
         </div>
     )
 };
