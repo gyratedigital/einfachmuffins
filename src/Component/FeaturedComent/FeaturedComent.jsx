@@ -194,11 +194,7 @@ const FeaturedComment = () => {
             <p className="mt-2 text-gray-600 italic">TO BLOGGING FULL-TIME</p>
             {/* Image */}
             <img
-<<<<<<< HEAD
               src="/assets/images/lindsay-bjork.jpg"
-=======
-              src="/assets/images/lindsay-bjork.jpeg"
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
               alt="Lindsay and Bjork"
               className="mt-4 "
             />

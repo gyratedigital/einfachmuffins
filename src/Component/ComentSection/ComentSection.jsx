@@ -1,8 +1,4 @@
 import React, { useState } from "react"
-<<<<<<< HEAD
-import { FaInstagram, FaPinterest, FaFacebook, FaTwitter } from "react-icons/fa";
-=======
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
 
 const CommentSection = (props) => {
 
@@ -153,7 +149,6 @@ const CommentSection = (props) => {
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div className="block sm:hidden flex flex-col space-y-5 mt-10">                        {/* Author Card */}
                         <div className="bg-gray-100 p-6 pt-16 text-center relative">
                           {/* Image Container */}
@@ -180,12 +175,12 @@ const CommentSection = (props) => {
                         {/* Follow & Signup Form */}
                         <div className="bg-[rgb(77,77,77)] text-white p-10">
                           <h3 className="text-lg font-bold text-center">FOLLOW US</h3>
-                          <div className="flex justify-between space-x-4 mt-6">
+                          {/* <div className="flex justify-between space-x-4 mt-6">
                             <FaInstagram className="text-4xl" />
                             <FaPinterest className="text-4xl" />
                             <FaFacebook className="text-4xl" />
                             <FaTwitter className="text-4xl" />
-                          </div>
+                          </div> */}
                           <h3 className="mt-4 font-bold text-lg">SIGN UP FOR EMAIL UPDATES</h3>
                           <p className="text-sm italic text-gray-300 mb-10">
                             Get a Free eCookbook with our top 25 recipes.
@@ -207,9 +202,6 @@ const CommentSection = (props) => {
                       </div>
             </div>
             
-=======
-            </div>
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
         </div>
     )
 };

@@ -34,7 +34,6 @@ const MoreRecipe = (props) => {
 
                         {/* Navigation Section */}
                         <hr />
-<<<<<<< HEAD
                         <div className="flex flex-col sm:flex-row justify-between items-center sm:items-stretch p-4 mt-2 mb-2 gap-6 sm:gap-10">
     {/* Previous Recipe */}
     <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-1/2">
@@ -59,33 +58,11 @@ const MoreRecipe = (props) => {
     </div>
 </div>
 
-=======
-                        <div className="flex justify-between items-stretch p-4 mt-2 mb-2 gap-10">
-                            {/* Previous Recipe */}
-                            <div className="flex items-center gap-4 w-1/2 h-full">
-                                <img src="/assets/images/recipe1.jpg" alt="Prev Recipe" className="w-24 h-24 object-cover" />
-                                <div className="flex flex-col justify-between w-full min-h-[100px]">
-                                    <p className="font-bold">Baked Coconut Shrimp with Springy Rice and Honey Butter Sauce</p>
-                                    <button className="bg-nextbackbtn text-white px-4 py-1 mt-2 w-fit">PREV</button>
-                                </div>
-                            </div>
-
-                            {/* Next Recipe */}
-                            <div className="flex items-center gap-4 w-1/2 h-full">
-                                <div className="flex flex-col justify-between w-full min-h-[110px]">
-                                    <p className="font-bold">Garlic Cream Bucatini with Peas and Asparagus</p>
-                                    <button className="bg-nextbackbtn text-white px-4 py-1 mt-2 w-fit">NEXT</button>
-                                </div>
-                                <img src="/assets/images/recipe2.jpg" alt="Next Recipe" className="w-24 h-24 object-cover" />
-                            </div>
-                        </div>
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
 
 
                         <hr />
 
                    {/* Created By Section */}
-<<<<<<< HEAD
                    <div className="text-center mt-8">
     <h3 className="text-lg font-bold text-customPurple">❤️ CREATED BY THE FBL TEAM</h3>
     <div className="grid grid-cols-2 gap-6 justify-center mt-4">
@@ -98,20 +75,6 @@ const MoreRecipe = (props) => {
             <div key={member.name} className="flex flex-col sm:flex-row items-center gap-4">
                 <img src={member.img} alt={member.name} className="w-20 h-20 object-cover rounded-full" />
                 <div className="text-center sm:text-start">
-=======
-<div className="text-center mt-8">
-    <h3 className="text-lg font-bold text-customPurple">❤️ CREATED BY THE POY TEAM</h3>
-    <div className="grid grid-cols-2 gap-6 justify-center mt-4">
-        {[
-            { name: "Lindsay Ostrom", role: "Recipe Developer", img: "/assets/images/sidebar-lindsay.jpeg" },
-            { name: "Eman Kemp", role: "Editorial", img: "/assets/images/eman.jpg" },
-            { name: "Rita Boersma", role: "Writer", img: "/assets/images/rita.jpg" },
-            { name: "Emily Caruso", role: "Videographer", img: "/assets/images/emily.jpg" }
-        ].map((member) => (
-            <div key={member.name} className="flex items-center gap-4">
-                <img src={member.img} alt={member.name} className="w-20 h-20 rounded-full" />
-                <div className="text-start">
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
                     <p className="font-bold text-gray-800">{member.name}</p>
                     <p className="text-sm text-gray-500">{member.role}</p>
                 </div>
@@ -120,10 +83,6 @@ const MoreRecipe = (props) => {
     </div>
 </div>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> f4ebc5195dbe16e8d4d55e18c2a340288630de61
                     </div>
 
                     {/* Right Side - Empty */}
