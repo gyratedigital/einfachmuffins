@@ -7,77 +7,76 @@ import "swiper/css/pagination";
 import "./Slider.css"; // Import the CSS file
 
 const Slider = ({ items }) => {
-  const [favorites, setFavorites] = useState({}); // State to track favorite status
+  const [favorites, setFavorites] = useState({});
 
   const toggleFavorite = (index) => {
     setFavorites((prev) => ({
       ...prev,
-      [index]: !prev[index], // Toggle favorite status for the card
+      [index]: !prev[index],
     }));
   };
 
   return (
-    <div className="container mx-auto p-[2%]">
+    <div className="container mx-auto px-4 py-6 min-h-[500px] flex items-center">
       <Swiper
+        className="mb-4 w-full" // Added margin-bottom to the Swiper wrapper
         slidesPerView={4}
         loop={true}
-        spaceBetween={6}
-        autoplay={false}
-        // autoplay={{
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // }}
+        spaceBetween={20}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
-          320: { slidesPerView: 2 },
-          480: { slidesPerView: 3 },
-          768: { slidesPerView: 4 },
+          320: { slidesPerView: 1, spaceBetween: 10 }, // Smallest screens
+          480: { slidesPerView: 2, spaceBetween: 15 }, // Mobile
+          768: { slidesPerView: 3, spaceBetween: 20 }, // Tablets
+          1024: { slidesPerView: 4, spaceBetween: 20 }, // Desktops
         }}
         modules={[Pagination, Autoplay]}
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="slider-item w-full rounded-[10px] overflow-hidden shadow-sm bg-white relative pb-[10px]">
-              {/* Options Button (Top-Left) */}
-              <button className="tag-button absolute top-[10px] left-[10px] px-[10px] py-[5px] bg-[#ff6f61] text-white border-none rounded-[5px] text-[12px] cursor-pointer">Simple</button> {/* Tag button */}
-
-              {/* Favorite (Heart) Icon */}
-              <button
-                className="favorite-button absolute top-[10px] right-[10px] bg-transparent border-none text-[18px] cursor-pointer z-[9]"
-                onClick={() => toggleFavorite(index)}
-              >
-                {favorites[index] ? <FaHeart /> : <FaRegHeart />} {/* Dynamic heart icon */}
-              </button>
-
-              {/* Image */}
-              <div className="image-container w-full">
+            <div className="slider-item w-full rounded-lg overflow-hidden shadow-xl bg-white relative mb-4 pb-4">
+              
+              {/* Image Wrapper */}
+              <div className="relative w-full">
                 <img
                   src={item.image}
                   alt={`Item ${index + 1}`}
-                  className="item-image w-full object-cover h-[250px]"
+                  className="w-full h-[240px] md:h-[220px] sm:h-[200px] object-cover rounded-t-lg transition-transform duration-300 ease-in-out hover:scale-105"
                 />
+
+                {/* Heart Icon (Favorite) */}
+                <button
+                  className={`absolute top-3 right-3 p-2 rounded-full transition-all transform ${
+                    favorites[index]
+                      ? "bg-red-500 text-white scale-110 shadow-lg"
+                      : "bg-white text-gray-500 shadow-md"
+                  } hover:bg-red-500 hover:text-white`}
+                  onClick={() => toggleFavorite(index)}
+                >
+                  {favorites[index] ? <FaHeart /> : <FaRegHeart />}
+                </button>
               </div>
 
-              {/* Rating & Timer Row */}
-              <div className="rating-timer flex justify-between items-center px-[15px] py-[10px] text-[14px] text-[#666] font-bold">
-                {/* Timer */}
-                <span className="timer flex items-center gap-[5px]">
-                  <FaClock /> {item.time} min
-                </span>
+              {/* Content Section */}
+              <div className="px-4 py-3">
+                <h3 className="text-center font-bold text-gray-900 text-lg">{item.title}</h3>
 
-                {/* Rating */}
-                <span className="rating flex items-center gap-[5px]">
-                  {Array.from({ length: 5 }, (_, i) => (
-                    <FaStar key={i} color={i < item.rating ? "#FFD700" : "#bbb"} />
-                  ))}
-                  <span>({item.rating})</span>
-                </span>
+                <div className="flex justify-between items-center text-md text-gray-600 font-bold mt-2 mb-3">
+                  {/* Cooking Time */}
+                  <span className="flex items-center gap-1">
+                    <FaClock className="text-[#ff6f61]" /> {item.time} min
+                  </span>
+
+                  {/* Rating System */}
+                  <span className="flex items-center gap-1">
+                    <FaStar className="text-[#FFD700]" /> {/* Always show 1 filled star */}
+                    <span>{item.rating.toFixed(1)}</span> {/* Show average rating */}
+                    <span className="text-gray-700">({item.totalReviews})</span> {/* Show total reviews */}
+                  </span>
+                </div>
+
+                <p className="text-center text-sm text-gray-700">{item.description}</p>
               </div>
-
-              {/* Title */}
-              <h3 className="item-title text-center text-[18px] text-[#333] my-[5px]">{item.title}</h3>
-
-              {/* Description */}
-              <p className="item-description text-center text-[14px] text-[#666] px-[10px]">{item.description}</p>
             </div>
           </SwiperSlide>
         ))}

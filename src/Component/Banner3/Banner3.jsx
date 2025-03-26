@@ -26,40 +26,75 @@ const Banner3 = () => {
         return (
             <>
                 {[...Array(fullStars)].map((_, i) => (
-                    <FaStar key={i} className="star-icon text-yellow-400" />
+                    <FaStar key={i} className="text-yellow-400" />
                 ))}
-                {halfStar && <FaStarHalfAlt className="star-icon text-yellow-400" />}
+                {halfStar && <FaStarHalfAlt className="text-yellow-400" />}
             </>
         );
     };
 
     return (
         <div className="banner3 bg-green-500 bg-opacity-40 flex flex-col items-center py-12 text-center text-black relative overflow-visible clip-path-custom">
-            <div className="absolute top-5 left-5">
-                <GiKnifeFork className="text-6xl text-black rotate-12 hover:rotate-45 transition-all duration-300" />
+            {/* Top Left Icon */}
+            <div className="absolute top-5 left-5 text-black">
+                <GiKnifeFork className="text-4xl md:text-6xl rotate-12 hover:rotate-45 transition-all duration-300" />
             </div>
 
             <h1 className="text-3xl md:text-4xl font-bold">Our Delicious Recipes</h1>
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 p-6 max-w-6xl">
+            {/* Recipe Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 max-w-6xl w-full">
                 {recipes.map((recipe, index) => (
-                    <div key={index} className="relative rounded-lg  ">
-                        <img className="object-cover rounded-md shadow-sm h-40 w-full" src={recipe.image} alt={recipe.title} />
-                        <button className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs rounded">Simple</button>
-                        <button className="absolute top-2 right-2" onClick={() => toggleFavorite(index)}>
-                            {favorites[index] ? <FaHeart className="text-red-500" /> : <FaRegHeart className="text-gray-500" />}
+                    <div 
+                        key={index} 
+                        className="relative rounded-lg bg-transparent shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                    >
+                        {/* Image */}
+                        <div className="w-full h-44 overflow-hidden">
+                            <img 
+                                className="object-cover w-full h-full rounded-md transition-transform duration-300 hover:scale-110" 
+                                src={recipe.image} 
+                                alt={recipe.title} 
+                            />
+                        </div>
+
+                        {/* Simple Tag */}
+                        <button className="absolute top-2 left-2 bg-red-500 text-white px-3 py-1 text-xs rounded-md shadow-md">
+                            Simple
                         </button>
-                        <div className="mt-2 font-semibold text-lg">{recipe.title}</div>
-                        <div className="flex justify-between items-center text-sm text-gray-600 mt-1">
-                            <span className="flex items-center gap-1"><FaClock /> {recipe.time}</span>
-                            <div className="flex items-center gap-1">{renderStars(recipe.rating)}</div>
+
+                        {/* Favorite Button (With White Background) */}
+                        <button
+                            className={`absolute top-2 right-2 p-2  rounded-full shadow-md transition-all duration-300
+                            ${favorites[index] ? "bg-white text-red-500 scale-110" : "bg-white text-gray-400 hover:text-red-500 hover:scale-110"}`}
+                            onClick={() => toggleFavorite(index)}
+                        >
+                            {favorites[index] ? <FaHeart /> : <FaRegHeart />}
+                        </button>
+
+                        {/* Content */}
+                        <div className="p-4 text-center">
+                            <h3 className="text-lg font-bold mb-2">{recipe.title}</h3>
+
+                            {/* Time & Rating */}
+                            <div className="flex justify-between items-center text-sm text-gray-600 mb-2">
+                                <span className="flex items-center gap-1 text-lg">
+                                    <FaClock /> {recipe.time}
+                                </span>
+                                <span className="flex items-center gap-1">
+                                    {renderStars(recipe.rating)}
+                                </span>
+                            </div>
+
+                            
                         </div>
                     </div>
                 ))}
             </div>
 
-            <div className="absolute bottom-5 right-5">
-                <GiForkKnifeSpoon className="text-6xl text-black rotate-12 hover:rotate-45 transition-all duration-300" />
+            {/* Bottom Right Icon */}
+            <div className="absolute bottom-5 right-5 text-black">
+                <GiForkKnifeSpoon className="text-4xl md:text-6xl rotate-12 hover:rotate-45 transition-all duration-300" />
             </div>
         </div>
     );

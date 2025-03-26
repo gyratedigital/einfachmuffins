@@ -42,15 +42,18 @@ const Home = (props) => {
         {
           image: "https://images.unsplash.com/photo-1513104890138-7c749659a591",
           title: "Delicious Pizza",
-          time: 30, // in minutes
-          rating: 4, // 1 to 5
-          description: "Try our hot and fresh pizza made with premium ingredients.",
+      time: 30, // Cooking time in minutes
+      rating: 4.0, // Average rating
+      totalReviews: 120, // Total number of reviews
+      description: "Hot, fresh, and loaded with premium ingredients—experience the perfect slice!"
         },
+        
         {
           image: "https://images.unsplash.com/photo-1574126154517-d1e0d89ef734",
           title: "Tasty Burger",
           time: 15,
           rating: 5,
+          totalReviews: 55, // Total number of reviews
           description: "Juicy grilled burger with fresh veggies and special sauce.",
         },
         {
@@ -58,6 +61,7 @@ const Home = (props) => {
           title: "Spaghetti Bolognese",
           time: 45,
           rating: 4,
+          totalReviews: 40, // Total number of reviews
           description: "Classic Italian pasta with rich tomato and meat sauce.",
         },
         {
@@ -65,6 +69,7 @@ const Home = (props) => {
           title: "Sushi Platter",
           time: 20,
           rating: 5,
+          totalReviews: 45, // Total number of reviews
           description: "Freshly made sushi rolls with a variety of fillings.",
         },
         {
@@ -72,6 +77,7 @@ const Home = (props) => {
           title: "Grilled Steak",
           time: 40,
           rating: 5,
+          totalReviews: 87, // Total number of reviews
           description: "Juicy steak grilled to perfection with a side of vegetables.",
         },
         {
@@ -79,6 +85,7 @@ const Home = (props) => {
           title: "Chocolate Cake",
           time: 50,
           rating: 4,
+          totalReviews: 32, // Total number of reviews
           description: "Rich and moist chocolate cake with creamy frosting.",
         },
         {
@@ -86,6 +93,7 @@ const Home = (props) => {
           title: "Caesar Salad",
           time: 10,
           rating: 4,
+          totalReviews: 29, // Total number of reviews
           description: "Healthy and fresh salad with crispy lettuce and dressing.",
         },
         {
@@ -93,6 +101,7 @@ const Home = (props) => {
           title: "Fruit Smoothie",
           time: 5,
           rating: 5,
+          totalReviews: 78, // Total number of reviews
           description: "Refreshing fruit smoothie made with natural ingredients.",
         },
         {
@@ -100,6 +109,7 @@ const Home = (props) => {
           title: "Pancakes with Honey",
           time: 20,
           rating: 4,
+          totalReviews: 67, // Total number of reviews
           description: "Fluffy pancakes drizzled with pure honey and berries.",
         },
         {
@@ -107,6 +117,7 @@ const Home = (props) => {
           title: "Shrimp Tacos",
           time: 25,
           rating: 5,
+          totalReviews: 23, // Total number of reviews
           description: "Delicious tacos with seasoned shrimp and fresh toppings.",
         },
         {
@@ -114,6 +125,7 @@ const Home = (props) => {
           title: "Grilled Salmon",
           time: 35,
           rating: 5,
+          totalReviews: 13, // Total number of reviews
           description: "Healthy grilled salmon served with lemon and herbs.",
         },
         {
@@ -121,6 +133,7 @@ const Home = (props) => {
           title: "Ice Cream Sundae",
           time: 5,
           rating: 4,
+          totalReviews: 78, // Total number of reviews
           description: "Creamy vanilla ice cream topped with chocolate and nuts.",
         },
       ];
