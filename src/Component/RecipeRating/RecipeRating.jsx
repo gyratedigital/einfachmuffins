@@ -60,13 +60,13 @@ const RecipeRating = () => {
       {/* Grid Layout for Left and Right Sections */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">        {/* Left Side - Recipe Info */}
         <div className="md:col-span-2">
-          <div className="bg-customPurple text-white p-6 relative">
+          <div className="bg-[rgba(238,97,97,0.7)] text-white p-6 relative">
             {/* Recipe Image */}
             <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
     <img
       src="/assets/images/ratingimg.jpg"
       alt="Crispy Chicken Tikka Bowl"
-      className="w-32 h-32 rounded-full object-cover border-4 border-customPurple shadow-lg"
+      className="w-32 h-32 rounded-full object-cover border-4 border-[rgba(238,97,97,0.7)] shadow-lg"
     />
   </div>
 
@@ -93,7 +93,7 @@ const RecipeRating = () => {
           </div>
 
           {/* Print & Pin Buttons */}
-          <div className="bg-customPurple p-2">
+          <div className="bg-[rgba(238,97,97,0.7)] p-2">
             <div className="bg-white p-4">
               <div className="flex justify-center gap-4 mt-6">
                 <button className="w-full px-6 py-2 bg-[rgb(242,242,242)] text-customPurple font-semibold hover:bg-gray-300">
@@ -199,7 +199,7 @@ const RecipeRating = () => {
                 <div className="mt-6">
                   <ol className="space-y-6">
                     <li className="flex items-center gap-4">
-                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                         1
                       </span>
                       <p className="text-gray-700">
@@ -207,7 +207,7 @@ const RecipeRating = () => {
                       </p>
                     </li>
                     <li className="flex items-center gap-4">
-                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                         2
                       </span>
                       <p className="text-gray-700">
@@ -215,7 +215,7 @@ const RecipeRating = () => {
                       </p>
                     </li>
                     <li className="flex items-center gap-4">
-                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                         3
                       </span>
                       <p className="text-gray-700">
@@ -223,7 +223,7 @@ const RecipeRating = () => {
                       </p>
                     </li>
                     <li className="flex items-center gap-4">
-                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                      <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                         4
                       </span>
                       <p className="text-gray-700">
@@ -265,7 +265,7 @@ const RecipeRating = () => {
             </div>
 
             {/* Nutrition Facts Section */}
-            <div className="bg-customPurple text-white">
+            <div className="bg-[rgba(238,97,97,0.7)] text-white">
               <div className="pl-4 mt-4">
                 <h2 className="text-xl font-bold uppercase">Nutrition Facts</h2>
                 <p className="italic text-sm mt-1">Serves 3</p>

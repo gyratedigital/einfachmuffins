@@ -116,7 +116,7 @@ const FeaturedComment = () => {
               <ol className="space-y-6">
                 <li className="flex items-center gap-4">
                   {/* Circle Number */}
-                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                     1
                   </span>
                   {/* Text */}
@@ -127,19 +127,19 @@ const FeaturedComment = () => {
                 </li>
                 <li className="flex items-center gap-4">
                   {/* Circle Number */}
-                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                     2
                   </span>
                   {/* Text */}
                   <p>
                     <span className="font-bold text-gray-900">Mint Sauce.</span> Throw all the sauce ingredients in the
                     blender/food processor and zip until smooth-ish. I could put this sauce on anything and everything (see:
-                    <a href="#" className="text-[rgb(115,64,96)] underline"> these butter cauli and chickpeas too!</a>).
+                    <a href="#" className="text-[rgba(238,97,97,0.7)] underline"> these butter cauli and chickpeas too!</a>).
                   </p>
                 </li>
                 <li className="flex items-center gap-4">
                   {/* Circle Number */}
-                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgb(115,64,96)] text-white font-bold text-lg">
+                  <span className="w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full bg-[rgba(238,97,97,0.7)] text-white font-bold text-lg">
                     3
                   </span>
                   {/* Text */}
@@ -185,21 +185,21 @@ const FeaturedComment = () => {
         <div>
           <div className="bg-gray-100 p-6  text-center flex flex-col items-center">
             {/* Title */}
-            <h3 className="text-[rgb(115,64,96)] font-bold text-lg uppercase">
+            <h3 className="text-[rgba(238,97,97,0.7)] font-bold text-lg uppercase">
               FOLLOW OUR 10 YEAR
             </h3>
             {/* Name */}
-            <p className="mt-2 text-[rgb(115,64,96)] font-bold text-xl">journey</p>
+            <p className="mt-2 text-[rgba(238,97,97,0.7)] font-bold text-xl">journey</p>
             {/* Tagline */}
             <p className="mt-2 text-gray-600 italic">TO BLOGGING FULL-TIME</p>
             {/* Image */}
             <img
-              src="/assets/images/lindsay-bjork.jpg"
+              src="/assets/images/Katharina_Schneider.jpeg"
               alt="Lindsay and Bjork"
               className="mt-4 "
             />
             {/* Learn More Button */}
-            <button className="mt-6 text-[rgb(115,64,96)] font-bold uppercase hover:underline">
+            <button className="mt-6 text-[rgba(238,97,97,0.7)] font-bold uppercase hover:underline">
               LEARN MORE
             </button>
           </div>

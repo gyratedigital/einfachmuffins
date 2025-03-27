@@ -75,7 +75,7 @@ const Banner2 = () => {
         ))}
         {halfStar && <FaStarHalfAlt />}
       </div>
-    );
+    ); 
   };
 
   return (

@@ -14,7 +14,7 @@ const MoreRecipe = (props) => {
                                 LOOKING FOR MORE FOODS WITH BIG FLAVORS?
                             </h2>
                             <div className="mt-6 border-l-4 border-[rgb(242,242,242)] pl-4">
-                                <ul className="mt-3 space-y-2 text-customPurple font-semibold list-disc list-inside [&>li]: [&>li::marker]:text-[rgb(115,64,96)]">
+                                <ul className="mt-3 space-y-2 text-customPurple font-semibold list-disc list-inside [&>li]: [&>li::marker]:text-[rgba(238,97,97,0.7)]">
                                     <li><a href="#" className="hover:underline">Chicken Tikka Masala</a> <span className="text-gray-600 font-normal">(so delicious and made with a homemade masala sauce)</span></li>
                                     <li><a href="#" className="hover:underline">Thai Yellow Chicken with Potatoes</a> <span className="text-gray-600 font-normal">(over 160 glowing reviews, so you know it's a good one!)</span></li>
                                     <li> <a href="#" className="hover:underline">Chopped Thai-Inspired Chicken Salad</a> <span className="text-gray-600 font-normal">(healthy, fresh, and full of crunchiness)</span></li>
@@ -25,7 +25,7 @@ const MoreRecipe = (props) => {
                         {/* Tags Section */}
                         <div className="flex flex-wrap gap-2 mt-4 text-sm text-white">
                             {["ALL RECIPES", "BOWLS", "DAIRY-FREE", "DINNER", "GLUTEN-FREE", "LIME", "MEAT AND CHICKEN", "QUICK AND EASY", "QUINOA", "RECIPES", "SPRING", "SUMMER"].map((tag) => (
-                                <span key={tag} className="bg-customPurple px-3 py-1 text-white">{tag}</span>
+                                <span key={tag} className="bg-[rgba(238,97,97,0.7)] px-3 py-1 text-white">{tag}</span>
                             ))}
                         </div>
 
@@ -64,7 +64,7 @@ const MoreRecipe = (props) => {
 
                    {/* Created By Section */}
                    <div className="text-center mt-8">
-    <h3 className="text-lg font-bold text-customPurple">❤️ CREATED BY THE FBL TEAM</h3>
+    <h3 className="text-lg font-bold text-[rgba(238,97,97,0.7)]">❤️ CREATED BY THE FBL TEAM</h3>
     <div className="grid grid-cols-2 gap-6 justify-center mt-4">
         {[
             { name: "Katharina_Schneider", role: "Recipe Developer", img: "/assets/images/Katharina_Schneider.jpeg" },

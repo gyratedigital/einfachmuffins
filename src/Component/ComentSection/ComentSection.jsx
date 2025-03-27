@@ -50,19 +50,19 @@ const CommentSection = (props) => {
                             <h3 className="font-bold text-lg mb-4">LEAVE A COMMENT</h3>
 
                             {/* Name Input */}
-                            <label className="block text-customPurple font-bold text-sm mb-1">NAME *</label>
+                            <label className="block text-[rgba(238,97,97,0.7)] font-bold text-sm mb-1">NAME *</label>
                             <input type="text" className="w-full border border-gray-300 p-2 mb-3" />
 
                             {/* Email Input */}
-                            <label className="block text-customPurple font-bold text-sm mb-1">EMAIL *</label>
+                            <label className="block text-[rgba(238,97,97,0.7)] font-bold text-sm mb-1">EMAIL *</label>
                             <input type="email" className="w-full border border-gray-300 p-2 mb-3" />
 
                             {/* Website Input */}
-                            <label className="block text-customPurple font-bold text-sm mb-1">WEBSITE</label>
+                            <label className="block text-[rgba(238,97,97,0.7)] font-bold text-sm mb-1">WEBSITE</label>
                             <input type="text" className="w-full border border-gray-300 p-2 mb-3" />
 
                             {/* Comment Textarea */}
-                            <label className="block text-customPurple font-bold text-sm mb-1">COMMENT *</label>
+                            <label className="block text-[rgba(238,97,97,0.7)] font-bold text-sm mb-1">COMMENT *</label>
                             <textarea className="w-full border border-gray-300 p-2 h-24 mb-3"></textarea>
 
                             {/* Rating Section */}
@@ -83,8 +83,8 @@ const CommentSection = (props) => {
                             <div className="flex items-start gap-2 mb-4">
                                 <input type="checkbox" id="subscribe" className="mt-1" />
                                 <label htmlFor="subscribe" className="text-sm">
-                                    <span className="font-bold text-customPurple">SIGN ME UP FOR RECIPES, PLEASE!</span><br />
-                                    <span className="text-customPurple">
+                                    <span className="font-bold text-[rgba(238,97,97,0.7)]">SIGN ME UP FOR RECIPES, PLEASE!</span><br />
+                                    <span className="text-[rgba(238,97,97,0.7)]">
                                         ALL THE FOOD, RIGHT TO YOUR INBOX (AND A FREE ECOOKBOOK, TOO!).
                                     </span>
                                 </label>
@@ -96,7 +96,7 @@ const CommentSection = (props) => {
                             </p>
 
                             {/* Submit Button */}
-                            <button className="bg-customPurple text-white px-4 py-2 font-bold">
+                            <button className="bg-[rgba(238,97,97,0.7)] text-white px-4 py-2 font-bold">
                                 POST COMMENT
                             </button>
                         </div>
@@ -122,7 +122,7 @@ const CommentSection = (props) => {
                                             </div>
                                             <p className="text-gray-700 text-sm mt-4">{comment.comment}</p>
                                             <p className="text-xs text-gray-500 mt-1">{comment.date}</p>
-                                            <button className="text-customPurple font-bold text-xs mt-1">REPLY</button>
+                                            <button className="text-[rgba(238,97,97,0.7)] font-bold text-xs mt-1">REPLY</button>
 
 
 
@@ -136,7 +136,7 @@ const CommentSection = (props) => {
                                                                 <p className="font-bold text-sm">{reply.name}</p>
                                                                 <p className="text-gray-700 text-sm">{reply.comment}</p>
                                                                 <p className="text-xs text-gray-500 mt-1">{reply.date}</p>
-                                                                <button className="text-customPurple font-bold text-xs mt-1">REPLY</button>
+                                                                <button className="text-[rgba(238,97,97,0.7)] font-bold text-xs mt-1">REPLY</button>
                                                             </div>
                                                         </div>
                                                     ))}
